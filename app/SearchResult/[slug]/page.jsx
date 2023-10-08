@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-function page({ params }) {
+function Page({ params }) {
   const router = useRouter();
   const API_KEY = `${process.env.NEXT_PUBLIC_API_KEY}`;
   const SEARCH_ENGINE_ID = `${process.env.NEXT_PUBLIC_CX_KEY}`;
@@ -49,7 +49,9 @@ function page({ params }) {
               <div className="w-10 h-10 rounded-full bg-white"></div>
               <div className="flex flex-col">
                 <div className="">{item?.title}</div>
-                <div className="text-xs">{item?.link?.slice(0,14)} &gt; wiki &gt; hi</div>
+                <div className="text-xs">
+                  {item?.link?.slice(0, 14)} &gt; wiki &gt; hi
+                </div>
               </div>
             </div>
             <div className="text-xl text-[#84b3f2] font-semibold">
@@ -63,4 +65,4 @@ function page({ params }) {
   );
 }
 
-export default page;
+export default Page;
