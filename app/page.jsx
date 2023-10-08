@@ -97,7 +97,7 @@ export default function Home() {
               Google Search
             </button>
             <button className="bg-[#303134] hover:border hover:border-solid text-white px-4 py-2 rounded-md">
-              I'm Feeling Lucky
+              Im Feeling Lucky
             </button>
           </div>
 
